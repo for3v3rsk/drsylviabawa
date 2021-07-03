@@ -61,7 +61,7 @@ const Hero = () => {
               src={Photo}
               loading="eager" 
             />*/}
-            <span className="absolute bottom-0 left-0">
+            {/* <span className="absolute bottom-0 left-0">
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill="#EC4899"
@@ -69,7 +69,7 @@ const Hero = () => {
                   transform="translate(100 100)"
                 />
               </svg>
-            </span>
+            </span> */}
           </div>
         </div>
       </div>

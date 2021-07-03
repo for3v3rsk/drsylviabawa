@@ -255,9 +255,10 @@ a, button {
 }
 
 .headerBg {
+  margin-top:68px;
   @apply bg-gray-900;
   /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
-  @apply min-h-screen;
+  /* @apply min-h-screen; */
   /* background: linear-gradient(270deg, #5e69ee, #101a96, #000000); */
   /* background: linear-gradient(90deg, #4c4c4c, #35353c, #212129, rgba(33,33,41,1)) */
   /* box-shadow: 0 7.9px 1.9px rgba(0, 0, 0, 0.037),
