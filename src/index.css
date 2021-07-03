@@ -1,0 +1,463 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google fonts: Quattrocent & Old Standard TT */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Quattrocento&family=Coustard&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap'); */
+
+/* font-family: 'Nixie One', cursive; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/* Ones to use for the site */
+/* font-family: 'Old Standard TT', serif;
+font-family: 'Quattrocento', serif; */
+
+/* CAC Champagne font logo svg */
+@font-face {
+  font-family: 'CAC Champagne';
+  src: url('../src/assets/fonts/cac_champagne.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Impact font logo svg */
+@font-face {
+  font-family: 'Impact';
+  src: url('./assets/fonts/impact.ttf');
+}
+
+/* Muli Bold font */
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli.ttf');
+}
+/* Muli Bold font */
+@font-face {
+  font-family: 'Muli Bold';
+  src: url('./assets/fonts/Muli-Bold.ttf');
+}
+
+.coustard {
+  font-family: "Coustard", serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Coustard';
+  src: url('../src/assets/fonts/Coustard-Regular.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-family: 'Quattrocento', serif;
+  font-size: 16px;
+  @apply overflow-x-hidden;
+  @apply text-gray-800;
+  @apply bg-white-lilac;
+  @apply leading-relaxed;
+}
+
+.muli-bold {
+  font-family: "Muli Bold";
+}
+
+.muli {
+  font-family: "Muli";
+}
+
+.quattrocento {
+  font-family: "Quattrocento";
+}
+
+h1 {
+@apply text-5xl;
+}
+
+
+h2,h3,h4 {
+  font-family: "Muli Bold";
+}
+
+.nav_link {
+  @apply mx-5;
+  @apply py-3;
+  @apply cursor-pointer;
+}
+
+a, button {
+  touch-action: manipulation;
+}
+
+
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  @apply bg-picton-blue;
+  /* background: #2098D1; */
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+.activ {
+  /* content: ""; */
+  @apply text-white-lilac;
+  position: relative;
+  left: 0;
+  right: 100%;
+  /* bottom: 0; */
+  @apply bg-picton-blue;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Get in touch button Hover: Icon Wobble Horizontal */
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.hvr-icon-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-wobble-horizontal .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-icon-wobble-horizontal:hover .hvr-icon, .hvr-icon-wobble-horizontal:focus .hvr-icon, .hvr-icon-wobble-horizontal:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-wobble-horizontal;
+  animation-name: hvr-icon-wobble-horizontal;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+/* Mobile Menu Mask */
+.menuMask {
+  background-color: rgba(0, 0, 0,0.8);
+}
+
+/* Mobile Menu Link */
+.mobileMenuLink {
+  @apply text-lg;
+  @apply text-gray-700;
+  @apply py-5;
+  @apply px-5;
+  @apply mx-3;
+  @apply bg-white-lilac;
+  @apply my-1;
+}
+
+.headerBg {
+  @apply bg-gray-900;
+  /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
+  @apply min-h-screen;
+  /* background: linear-gradient(270deg, #5e69ee, #101a96, #000000); */
+  /* background: linear-gradient(90deg, #4c4c4c, #35353c, #212129, rgba(33,33,41,1)) */
+  /* box-shadow: 0 7.9px 1.9px rgba(0, 0, 0, 0.037),
+  0 18.2px 4px rgba(0, 0, 0, 0.053),
+  0 32px 7.1px rgba(0, 0, 0, 0.065),
+  0 51.3px 13.2px rgba(0, 0, 0, 0.077),
+  0 76.8px 29.1px rgba(0, 0, 0, 0.093),
+  0 100px 80px rgba(0, 0, 0, 0.13); */
+  
+}
+
+.headerImg {
+  filter: drop-shadow(-3em 2em 8px rgba(0,0,0,0.1));
+}
+
+.headerImgBg {
+  background-color: black;
+  border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+.publicationsBg {
+ /* background-color: #e5e5f7; */
+/* background-color: #ffffff;
+opacity: 1;
+background-image:  radial-gradient(#f1f3fd 2px, transparent 2px), radial-gradient(#f1f3fd 2px, #ffffff 2px);
+background-size: 80px 80px; */
+/* background-position: 0 0,40px 40px; */
+background-color: #ffffff;
+opacity: 1;
+background-image:  radial-gradient(#e5e5f7 2px, transparent 2px), radial-gradient(#e5e5f7 2px, #ffffff 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+}
+
+/* .publicationCategoryUnderline {
+  text-decoration: white underline;
+  text-decoration-style: wavy;
+} */
+
+#about_paragraph::first-letter {
+  @apply text-2xl;
+  @apply font-semibold;
+}
+
+.heroTextBg {
+background-color: #e5e5f7;
+opacity: 0.8;
+background-size: 42px 42px;
+background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 2.1px, #e5e5f7 2.1px, #e5e5f7);
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
+}
+
+.custom-shape-divider-bottom-1621979078 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1621979078 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1621979078 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.heroBlobBg {
+  background-image: url("./assets/imgs/kirill-balobanov-Ef3AOkt6hHg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 0px right -500px;
+  /* backdrop-filter: blur(40px); */
+  /* opacity: 0.8; */
+  /* background-position-x:120%; */
+  /* background-position-y:0px; */
+}
+
+
+.custom-hover-underline:hover {
+text-decoration-line: underline;
+text-underline-offset: 8px;
+}
+
+
+
+
+
+
+
+/* ==================================================================== */
+/* LOST */
+/* ==================================================================== */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+/* // transition-all ease-in-out duration-1000 transform translate-x-0 */
+
+
+/* ====================================================================
+                        BOTTOM DIVIDER
+==================================================================== */
+
+.custom-shape-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider .shape-fill {
+    fill: #FFFFFF;
+}
