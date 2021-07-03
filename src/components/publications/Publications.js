@@ -23,7 +23,7 @@ const Publications = ({ articles, books }) => {
   return (
     <section
       id="Publications"
-      className="py-24 md:py-28 w-full flex flex-col items-center bg-white-lilac publicationsBg min-h-screen"
+      className="py-24 md:py-28 w-full flex flex-col items-center bg-white-lilac publicationsBg min-h-screen overflow-x-hidden"
     >
       {/* publications heading */}
       <h1 className="muli-bold mb-8 font-semibold text-2xl text-center text-gray-700">

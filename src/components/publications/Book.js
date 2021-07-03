@@ -2,7 +2,7 @@ const Book = ({ book }) => {
   const { imgURL, altText, category, title, yearOfPublication, bookURL } = book;
 
   return (
-    <section className="max-w-sm flex flex-wrap justify-between muli text-sm text-white-lilac text-left bg-cornflower-blue-500 p-5 m-5 rounded-md shadow-md">
+    <section className="max-w-sm flex flex-wrap justify-between muli text-sm text-white-lilac text-left bg-cornflower-blue-500 p-5 m-5 rounded-md shadow-lg">
       {/* book image */}
       <section className="w-full flex justify-center mt-2 mb-5">
         <img

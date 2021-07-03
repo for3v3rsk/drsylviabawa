@@ -1,4 +1,4 @@
-import Photo from "../../assets/imgs/kirill-balobanov-Ef3AOkt6hHg-unsplash.jpg";
+import Photo from "../../assets/imgs/etty-fidele-unsplash.jpg";
 
 const Hero = () => {
   return (
@@ -47,9 +47,9 @@ const Hero = () => {
               style={{
                 // width: "720px",
                 width: "auto",
-                height: "600px",
+                height: "426px",
                 // height: "auto",
-                objectPosition: "70% 50%",
+                // objectPosition: "70% 50%",
               }}
               src={Photo}
               loading="eager"
