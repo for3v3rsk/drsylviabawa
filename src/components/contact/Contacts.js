@@ -115,8 +115,8 @@ const Contacts = () => {
             </p>
           </section>
         </section>
-        <section className="container flex justify-center px-5 pt-3">
-          <hr className="border-t border-white-lilac w-11/12" />
+        <section className="container flex justify-center lg:px-5 pt-3">
+          <hr className="border-t border-white-lilac w-full lg:w-11/12" />
         </section>
         <section className="w-full flex justify-center pt-5">
           <section className=" flex">
