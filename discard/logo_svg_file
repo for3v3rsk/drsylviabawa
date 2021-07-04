@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.75 477.75">
+    <defs>
+        <style>.cls-1{fontFize:'90px';}.cls-1,.cls-2,.cls-3,.cls-5{fill:'#231f20';}.cls-1,.cls-2{fontFamily:'Impact';}.cls-2{fontSize:'80px';}.cls-3{fontSize:'95px';fontFamily:'CACChampagne', CAC Champagne;}.cls-4{fill:'none';stroke:'#231f20';strokeMiterlimit:{10};strokeWidth:'15px';}
+        </style>
+    </defs>
+    <title>DrSylviaBawa</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <text class="cls-1" transform="translate(96.06 204.27) rotate(-67.24)">S</text>
+            <text class="cls-1" transform="translate(133.83 136.65) rotate(-37.48)">Y</text>
+            <text class="cls-1" transform="matrix(0.99, -0.16, 0.16, 0.99, 197.87, 98.66)">L</text>
+            <text class="cls-1" transform="matrix(0.95, 0.31, -0.31, 0.95, 260.92, 93.56)">V</text>
+            <text class="cls-1" transform="matrix(0.71, 0.71, -0.71, 0.71, 332.51, 127.37)">I</text>
+            <text class="cls-1" transform="translate(370.01 172.73) rotate(72.2)">A</text>
+            <text class="cls-2" transform="translate(53.8 345.2) rotate(54.14)">B</text>
+            <text class="cls-2" transform="matrix(0.95, 0.31, -0.31, 0.95, 154.3, 434.67)">A</text>
+            <text class="cls-2" transform="translate(285.49 448.56) rotate(-21.27)">W</text>
+            <text class="cls-2" transform="translate(413.87 360.75) rotate(-60.57)">A</text>
+            <text class="cls-3" transform="translate(179.14 262.57)">Dr.</text>
+            <circle class="cls-4" cx="238.88" cy="238.88" r="128.47"/>
+            <circle class="cls-4" cx="238.88" cy="238.88" r="231.38"/>
+            <circle class="cls-5" cx="414.62" cy="246.85" r="10"/>
+            <circle class="cls-5" cx="62.96" cy="246.85" r="10"/>
+        </g>
+    </g>
+</svg>

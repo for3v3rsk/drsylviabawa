@@ -1,0 +1,60 @@
+import React from "react";
+import MailForm from "./MailForm";
+
+const ContactFormMap = () => {
+  return (
+    <section
+      id="Get_in_touch"
+      className=" text-gray-600 body-font bg-gray-10 relative"
+    >
+      <div className=" px-5 py-24 mx-auto flex flex-wrap justify-center">
+        {/* google map */}
+        <div className="lg:w-2/3 rounded-md overflow-hidden pb-5 flex items-end justify-start relative">
+          {/* md:w-1/2 mr-10 */}
+          {/* <iframe
+            // width="100%"
+            // height="100%"
+            className="absolute inset-0 w-full h-2/6"
+            frameBorder="0"
+            title="York University, Canada"
+            scrolling="no"
+            // src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9711668041314!2d-79.50405708401308!3d43.77345735266323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd330b767bfb%3A0xdbb899cc9da76d19!2sYork%20University!5e0!3m2!1sen!2sgh!4v1623159676480!5m2!1sen!2sgh"
+            style={{ filter: "grayscale( 1 ) contrast (1.2 ) opacity (0.4 )" }}
+          ></iframe> */}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9713534099687!2d-79.50405708398138!3d43.77345347911729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd330b767bfb%3A0xdbb899cc9da76d19!2sYork%20University!5e0!3m2!1sen!2sgh!4v1623777956865!5m2!1sen!2sgh"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            loading="lazy"
+          ></iframe>
+
+          {/* <div className=" bg-white relative flex flex-col flex-wrap py-5 rounded shadow-md">
+            <div className="lg:w-1/2 px-6">
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
+                ADDRESS
+              </h2>
+              <p className="mt-1">4700 Keele St, Toronto, ON Canada, M3J 1P3</p>
+            </div>
+            <div className="lg:w-1/2 px-6 mt-1 lg:mt-0">
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
+                EMAIL
+              </h2>
+              <a className="text-indigo-500 leading-relaxed">
+                example@email.com
+              </a>
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+                PHONE
+              </h2>
+              <p className="leading-relaxed"> &#40;416&#41; 736-2100</p>
+            </div>
+          </div> */}
+        </div>
+        <MailForm />
+      </div>
+    </section>
+  );
+};
+
+export default ContactFormMap;

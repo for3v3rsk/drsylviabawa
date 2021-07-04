@@ -2,8 +2,7 @@
 import { Link } from "react-scroll";
 import { ReactComponent as Logo } from "../../assets/imgs/DrSylviaBawaLogoLight.svg";
 
-const Navbar = ( { menuIsOpen } ) =>
-{
+const Navbar = ({ menuIsOpen }) => {
   //* toggle visibility (state) of Mobile Menu/Nav
   // const [ showMenu, setShowMenu ] = useState( false );
 
@@ -11,55 +10,56 @@ const Navbar = ( { menuIsOpen } ) =>
   // const menuIsOpen = () => { setShowMenu( !showMenu ) };
 
   return (
-
     <>
-      <nav >
-        <div className="z-10 fixed top-0 left-0 w-full bg-white-lilac
-    text-gray-700 text-lg font-medium py-4 lg:py-4 px-4 shadow">
+      <nav>
+        <div
+          className="z-10 fixed top-0 left-0 w-full bg-white-lilac
+    text-gray-700 text-lg font-medium py-4 lg:py-4 px-4 shadow"
+        >
           <div className="container mx-auto flex justify-between">
-            {/* Branding */ }
+            {/* Branding */}
             <div className="">
               <Logo className="h-10 w-10" />
             </div>
 
-            {/* primary navbar links */ }
-            <ul className="hidden lg:flex items-center">
+            {/* primary navbar links */}
+            <ul id="menuLinks" className="hidden lg:flex items-center">
               <Link
                 activeClass="active"
                 to="Hero"
-                spy={ true }
-                smooth={ true }
-                offset={ -150 }
-                duration={ 500 }
+                spy={true}
+                smooth={true}
+                offset={-150}
+                duration={500}
               >
-                <li className="nav_link hvr-underline-from-left">Home</li>
+                <li className="nav_link nav_link_hover">Home</li>
               </Link>
               <Link
                 activeClass="active"
                 to="About"
-                spy={ true }
-                smooth={ true }
-                offset={ -370 }
-                duration={ 500 }
+                spy={true}
+                smooth={true}
+                offset={-370}
+                duration={500}
               >
-                <li className="nav_link hvr-underline-from-left">About</li>
+                <li className="nav_link nav_link_hover">About</li>
               </Link>
               <Link
                 activeClass="active"
                 to="Publications"
-                spy={ true }
-                smooth={ true }
-                offset={ -360 }
-                duration={ 500 }
+                spy={true}
+                smooth={true}
+                offset={-360}
+                duration={500}
               >
-                <li className="nav_link hvr-underline-from-left">Publications</li>
+                <li className="nav_link nav_link_hover">Publications</li>
               </Link>
               <Link
                 to="Contact"
-                spy={ true }
-                smooth={ true }
-                offset={ -370 }
-                duration={ 500 }
+                spy={true}
+                smooth={true}
+                offset={-370}
+                duration={500}
               >
                 <li className="px-10 py-3 cursor-pointer bg-picton-blue-500 text-white-lilac font-semibold rounded-full hover:bg-picton-blue-700 transition duration-300 lg:ml-5">
                   Contact
@@ -67,9 +67,8 @@ const Navbar = ( { menuIsOpen } ) =>
               </Link>
             </ul>
 
-
-            {/* mobile menu */ }
-            <div className="lg:hidden text-gray-700" onClick={ menuIsOpen }>
+            {/* mobile menu */}
+            <div className="lg:hidden text-gray-700" onClick={menuIsOpen}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -80,14 +79,13 @@ const Navbar = ( { menuIsOpen } ) =>
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={ 2 }
+                  strokeWidth={2}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </div>
           </div>
         </div>
-
       </nav>
     </>
   );

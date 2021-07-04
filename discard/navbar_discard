@@ -1,0 +1,131 @@
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { ReactComponent as Logo } from "../assets/imgs/DrSylviaBawaLogoLight.svg";
+
+const Navbar = () =>
+{
+    const [ showMenu, setShowMenu ] = useState( false );
+    const closeMenu = () =>
+    {
+        setShowMenu( false );
+    };
+
+    return (
+        <nav className=" z-10 sticky top-0 left-0 w-full bg-white py-2 lg:py-5">
+            {/* Navbar container */ }
+            <div className="mx-auto flex justify-between items-center px-5 lg:w-4/5 md:px-8 ">
+                {/* Branding */ }
+                <div className="">
+                    <Logo className="h-12 w-12" />
+                </div>
+
+                {/* primary navbar links */ }
+                <ul className="hidden lg:flex items-center">
+                    <Link
+                        activeClass="active"
+                        to="Hero"
+                        spy={ true }
+                        smooth={ true }
+                        offset={ -150 }
+                        duration={ 500 }
+                    >
+                        <li className="nav_link hvr-bounce-to-right">
+                            Home
+            </li>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="About"
+                        spy={ true }
+                        smooth={ true }
+                        offset={ -370 }
+                        duration={ 500 }
+                    >
+                        <li className="nav_link hvr-bounce-to-right">
+                            About
+            </li>
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="Publications"
+                        spy={ true }
+                        smooth={ true }
+                        offset={ -360 }
+                        duration={ 500 }
+                    >
+                        <li className="nav_link hvr-bounce-to-right">
+                            Publications
+            </li>
+                    </Link>
+                    <Link
+                        to="Get_in_touch"
+                        spy={ true }
+                        smooth={ true }
+                        offset={ -170 }
+                        duration={ 500 }
+                    >
+                        <li className="nav_link bg-indigo-500 text-white rounded-full hover:bg-indigo-800 transition duration-500 cursor-pointer lg:ml-5">
+                            Get in touch
+            </li>
+                    </Link>
+                </ul>
+
+                {/* mobile menu */ }
+                <div
+                    className="lg:hidden text-3xl"
+                    onClick={ () =>
+                    {
+                        setShowMenu( !showMenu );
+                    } }
+                >
+                    { showMenu ? (
+                        <span className="">
+                            <FaTimes />
+                        </span>
+                    ) : (
+                        <span>
+                            <FaBars />
+                        </span>
+                    ) }
+                </div>
+            </div>
+
+            {/* secondary nav */ }
+            <div className={ ` ${ showMenu ? "" : "hidden" } fixed left-0 ` }>
+                <div
+                    className="w-full h-full bg-black opacity-90 fixed"
+                    onClick={ closeMenu }
+                ></div>
+                <div className="mobileMenuCanvas w-3/5"></div>
+                <ul className="mobileMenuCanvas z-50">
+                    <Link to="Hero" spy={ true } smooth={ true } duration={ 500 }>
+                        <li className="mobiileMenuLink" onClick={ closeMenu }>
+                            Home
+            </li>
+                    </Link>
+                    <Link to="About" spy={ true } smooth={ true } duration={ 500 }>
+                        <li className="mobiileMenuLink" onClick={ closeMenu }>
+                            About
+            </li>
+                    </Link>
+                    <Link to="Publications" spy={ true } smooth={ true } duration={ 500 }>
+                        <li className="mobiileMenuLink" onClick={ closeMenu }>
+                            Publications
+            </li>
+                    </Link>
+                    <Link to="Get_in_touch" spy={ true } smooth={ true } duration={ 500 }>
+                        <li
+                            className="mt-3 py-4 px-12  bg-indigo-500 rounded-full text-white"
+                            onClick={ closeMenu }
+                        >
+                            Get in touch
+            </li>
+                    </Link>
+                </ul>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;

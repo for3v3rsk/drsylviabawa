@@ -58,7 +58,7 @@ font-family: 'Quattrocento', serif; */
 
 html {
   font-family: 'Quattrocento', serif;
-  font-size: 16px;
+  font-size: 100%;
   @apply overflow-x-hidden;
   @apply text-gray-800;
   @apply bg-white-lilac;
@@ -292,6 +292,42 @@ background-image:  radial-gradient(#e5e5f7 2px, transparent 2px), radial-gradien
 background-size: 80px 80px;
 background-position: 0 0,40px 40px;
 }
+
+.nav_link_hover {
+  position: relative;
+  /* color: #a90000; */
+  @apply text-gray-800;
+  text-decoration: none;
+}
+
+.nav_link_hover:hover {
+  /* color: #a90000; */
+  @apply text-gray-800;
+}
+
+.nav_link_hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  /* background-color: #a90000; */
+  @apply bg-gray-800;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav_link_hover:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.active {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 
 /* .publicationCategoryUnderline {
   text-decoration: white underline;

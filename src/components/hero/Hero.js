@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Photo from "../../assets/imgs/etty-fidele-unsplash.jpg";
 
 const Hero = () => {
@@ -8,14 +9,22 @@ const Hero = () => {
           <h4 className="mb-8 quattrocento text-base tracking-tight title-font md:text-lg">
             Hi there, I am
           </h4>
-          <h1 className="mb-8 muli-bold font-black sm:text-5xl text-picton-blue md:text-8xl title-font">
+          {/* <h1 className="mb-8 muli-bold font-black sm:text-5xl text-picton-blue md:text-8xl title-font"> */}
+          <h1 className="mb-8 muli-bold font-black sm:text-4xl text-picton-blue md:text-6xl lg:text-8xl title-font">
             Sylvia Bawa
           </h1>
           <p className="mb-8 text-left max-w-prose md:text-2xl ">
             Associate professor, writer and public speaker.
           </p>
           <div className="flex flex-col justify-center lg:flex-row lg:items-center">
-            <button className="flex flex-nowrap items-center font-semibold px-10 py-4 mt-auto text-picton-blue border-solid border-2 border-picton-blue-500 md:transition duration-300 ease-in-out transform rounded-lg hover:text-white-lilac   focus:shadow-outline md:focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+            <Link
+              className="flex flex-nowrap items-center font-semibold px-10 py-4 mt-auto text-picton-blue border-solid border-2 border-picton-blue-500 md:transition duration-300 ease-in-out transform rounded-lg hover:text-white-lilac   focus:shadow-outline md:focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-370}
+              duration={500}
+            >
               Get in touch
               <span className="self-center ml-2 text-sm">
                 <svg
@@ -36,7 +45,7 @@ const Hero = () => {
                   />
                 </svg>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="w-full lg:w-5/6 lg:max-w-lg md:w-1/2">
