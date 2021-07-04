@@ -3,7 +3,7 @@ import Photo from "../../assets/imgs/etty-fidele-unsplash.jpg";
 
 const Hero = () => {
   return (
-    <section id="Hero" className="py-28 lg:py-20 headerBg">
+    <section id="Hero" className="py-20 headerBg">
       <div className="w-10/12 lg:w-4/5 flex flex-col items-center mx-auto text-gray-400 text-xl md:py-40 md:flex-row  md:items-center  md:justify-between lg:px-20">
         <div className=" flex flex-col items-start mb-28 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-10 md:mb-0">
           <h4 className="mb-8 quattrocento text-base tracking-tight title-font md:text-lg">

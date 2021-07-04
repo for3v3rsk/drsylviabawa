@@ -38,8 +38,8 @@ const Contacts = () => {
     >
       <section className="flex flex-col items-center">
         <h3 className="mb-10 text-2xl muli-bold text-center">Contact</h3>
-        <section className="flex flex-wrap">
-          <section className="flex items-start px-5 pb-5 lg:px-20">
+        <section className="lg:flex flex-wrap">
+          <section className="flex items-start px-5 mb-5 lg:px-20">
             <a className="flex" href="mailto:bawa@yorku.ca">
               <span className="mr-3">
                 <svg
@@ -60,7 +60,7 @@ const Contacts = () => {
               bawa@yorku.ca
             </a>
           </section>
-          <section className="flex items-start px-5 pb-5 lg:px-20">
+          <section className="flex items-start px-5 mb-5 lg:px-20">
             <span className="mr-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const Contacts = () => {
             </p>
           </section>
 
-          <section className="flex items-start px-5 pb-5 lg:px-20">
+          <section className="flex items-start px-5 mb-5 lg:px-20">
             <span className="mr-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
