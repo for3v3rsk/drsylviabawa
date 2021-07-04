@@ -10,7 +10,7 @@ const Hero = () => {
             Hi there, I am
           </h4>
           {/* <h1 className="mb-8 muli-bold font-black sm:text-5xl text-picton-blue md:text-8xl title-font"> */}
-          <h1 className="mb-8 muli-bold font-black sm:text-4xl text-picton-blue md:text-6xl lg:text-8xl title-font">
+          <h1 className="mb-8 muli-bold font-black sm:text-4xl text-picton-blue md:text-6xl lg:text-7xl title-font">
             Sylvia Bawa
           </h1>
           <p className="mb-8 text-left max-w-prose md:text-2xl ">
